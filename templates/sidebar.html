@@ -1,0 +1,9 @@
+<aside class="category-list">
+  <h5>Categories</h5>
+
+  <ul>
+    {% for category in categories %}
+    <li><a href="{{url_for('categoryItems', category_name=category.name)}}">{{category.name}}</a></li>
+    {% endfor %}
+  </ul>
+</aside>

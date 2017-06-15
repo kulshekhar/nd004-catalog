@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+<!-- prevent editor auto formatting from messing up the code -->
+
+{% block content %}
+
+
+<h5>Login</h5>
+
+<div id="btn-signin">
+  <span class="g-signin" data-scope="openid email" data-clientid="{{CLIENT_ID}}" data-redirecturi="postmessage" data-accesstype="offline"
+    data-cookiepolicy="single_host_origin" data-callback="signInCallback" data-approvalprompt="force">
+  </span>
+</div>
+
+<div id="result"></div>
+
+<script>
+  {% include 'login.js' %}
+
+</script>
+
+
+{% endblock %}
