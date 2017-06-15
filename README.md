@@ -31,6 +31,8 @@ export ND004_CATALOG_CLIENT_SECRETS_FILE=/vagrant/catalog/private/client_secret.
 python application.py
 ```
 
+Be sure to replace the path to the file in the above commands with the correct one for your system.
+
 You can then access the project at http://localhost:8000
 
 ### JSON End Points
